@@ -7,7 +7,7 @@ function tabla(datos) {
     for (let temp of datos) {
         contenido.innerHTML += ` <tr>
         <th scope="row">${temp.name}</ th>
-        <td>${temp.image}</td>
+        <td><img width="100px" height="100px" src="${temp.image}"</td>
         <td>${temp.species}</td>
     </tr> `;
         if (temp.id == 10) {
@@ -17,12 +17,19 @@ function tabla(datos) {
     }
 }
 
-    $(document).ready(function() {
-        contenido = document.getElementById('contenido');
-    });
+function capturaDato() {
+    
+}
+
+$(document).ready(function () {
+    contenido = document.getElementById('contenido');
 
     fetch(URL_CHARACTERS)
-    .then(response => response.json())
-    .then(datos => {
-        console.log(datos);
-    });
+        .then(response => response.json())
+        .then(datos => {
+            console.log(datos);
+            tabla(datos.results);
+        });
+
+});
+

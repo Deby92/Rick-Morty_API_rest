@@ -25,7 +25,7 @@
         Morty</a>
       <ul class="nav justify-content-end">
         <li class="nav-item">
-          <a class="nav-link text-info" href="https://rickandmortyapi.com/documentation/#rest">Link</a>
+          <a class="nav-link text-info" href="https://rickandmortyapi.com/documentation/#rest">API Rick y Morty</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-info" href="#">Link</a>
@@ -33,18 +33,18 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-info" href="#" role="button" data-bs-toggle="dropdown"
             aria-expanded="false">
-            Dropdown
+            Options
           </a>
           <ul class="dropdown-menu bg-dark">
-            <li><a class="dropdown-item text-info" href="#">Action</a></li>
-            <li><a class="dropdown-item text-info" href="#">Another action</a></li>
+            <li><a class="dropdown-item text-info" href="#">Especie</a></li>
+            <li><a class="dropdown-item text-info" href="#">Imagenes</a></li>
             <li><a class="dropdown-item text-info" href="#">Something else here</a></li>
           </ul>
         </li>
       </ul>
       <form class="d-flex" role="search">
-        <input class="form-control me-2 bg-dark text-secondary" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-info" type="submit">Search</button>
+        <input id="dato" class="form-control me-2 bg-dark text-secondary" type="search" placeholder="Nombre personaje" aria-label="Search">
+        <button class="btn btn-outline-info" type="button" onclick="capturaDato()">Buscar</button>
       </form>
     </div>
   </nav>
