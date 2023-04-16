@@ -4,3 +4,9 @@ body {
     background-attachment: fixed;
     
 }
+
+#card{
+    width: 20%;
+    float: left;
+    border: black solid 1px;
+}
