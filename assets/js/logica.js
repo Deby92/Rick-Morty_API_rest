@@ -12,7 +12,7 @@ function tabla(datos) {
         <td><img width="100px" height="100px" src="${temp.image}"</td>
         <td>${temp.species}</td>
     </tr> `;
-        if (temp.id == 20) {
+        if (temp.id == 40) {
             break
         }
 
@@ -67,6 +67,7 @@ function capturaDato() {
     nombrePersonaje = nombrePersonaje.toLowerCase();
     document.getElementById('tabla_principal').style.display = 'none';
     document.getElementById('galeria').style.display = 'none';
+    document.getElementById('carta').style.display = 'block';
 
     fetch(URL_CHARACTERS + '?name=' + nombrePersonaje)
         .then(response => response.json())
