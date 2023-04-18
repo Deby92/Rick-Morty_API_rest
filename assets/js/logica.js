@@ -24,7 +24,7 @@ function tarjeta(data) {
 
     for (let temp of data) {
         carta.innerHTML += ` 
-          <div id="tarjSola" class="card mb-3 container" style="max-width: 540px;">
+          <div id="tarjSola" class="card mb-3 container ps-0" style="max-width: 540px;">
     <div class="row g-0">
       <div class="col-md-4">
         <img src="${temp.image}" class="img-fluid rounded-start" alt="...">
